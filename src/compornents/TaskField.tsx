@@ -25,7 +25,16 @@ function TaskField({
   return (
     <>
       {input.map((task, index) => (
-        <Box key={index} sx={{ marginBottom: 2, display: "flex" }}>
+        <Box
+          key={index}
+          sx={{
+            marginBottom: 2,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginTop: 0,
+          }}
+        >
           <Checkbox
             checked={input[index].completed}
             onClick={() => {
@@ -50,7 +59,6 @@ function TaskField({
               <Button onClick={() => handleEnterPress(index)}>保存</Button>
             </>
           ) : (
-            // Enter押下後
             <Typography
               sx={{
                 cursor: "pointer",

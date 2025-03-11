@@ -6,14 +6,14 @@ interface AddTaskProps {
 
 function AddTask({ handleClick }: AddTaskProps) {
   return (
-    <Box sx={{ mt: "auto", textAlign: "center" }}>
+    <Box sx={{ marginTop: 2, textAlign: "center" }}>
       <Button
         variant="contained"
         color="primary"
         sx={{ marginBottom: 2 }}
         onClick={handleClick}
       >
-        タスクを追加する
+        新しいタスクを追加する
       </Button>
     </Box>
   );
