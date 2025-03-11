@@ -12,7 +12,7 @@ const Header = () => {
       >
         <Box sx={{ paddingLeft: 2 }}>
           <img
-            src="/public/assets/images/Group 1 (1).png"
+            src="/assets/images/Group 1 (1).png"
             alt="Logo"
             style={{ height: "40px" }}
           />
